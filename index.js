@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 8080;
 const routerApi = express.Router()
 
 app.use(express.json());
-app.use('/api', routerApi);
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
+app.use('/api', routerApi);
 
 const server = app.listen(PORT, () => {
     console.log(`Servidor http escuchando en el puerto ${server.address().port}`);

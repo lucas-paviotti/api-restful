@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Front</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <form class="formproducto" method="post" action="/api/productos/guardar/">
+        <div class="formproducto__row">
+            <div class="formproducto__field">
+                <label for="title">Titulo</label>
+            </div>
+            <div class="formproducto__field">
+                <input id="title" type="text" name="title" placeholder="Título del producto.." required>
+            </div>
+        </div>
+        <div class="formproducto__row">
+            <div class="formproducto__field">
+                <label for="price">Precio</label>
+            </div>
+            <div class="formproducto__field">
+                <input id="price" type="number" name="price" placeholder="Precio del producto.." required>
+            </div>
+        </div>
+        <div class="formproducto__row">
+            <div class="formproducto__field">
+                <label for="thumbnail">URL de imagen</label>
+            </div>
+            <div class="formproducto__field">
+                <input id="thumbnail" type="text" name="thumbnail" placeholder="Imagen del producto.." required>
+            </div>
+        </div>
+        <div class="formproducto__row">
+            <div class="formproducto__field">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
